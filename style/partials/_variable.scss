@@ -1,0 +1,34 @@
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+
+
+
+// Primary Colors
+$bandsite-black: #323232;
+$silver: #afafaf;
+$white: #ffffff;
+
+// Secondary Colors
+$bandsite-darkblack: #000000;
+$mercury: #e1e1e1;
+$alabaster: #fafafa;
+
+
+@font-face {
+    font-family: Avenir;
+    src: url(../.././assets/Font/AvenirNextLTPro-Regular.otf);
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: Avenir;
+    src: url(../.././assets/Font/AvenirNextLTPro-Demi.otf);
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: Avenir;
+    src: url(../.././assets/Font/AvenirNextLTPro-Bold.otf);
+    font-weight: 700;
+  }
+  

@@ -1,0 +1,135 @@
+@font-face {
+  font-family: Avenir;
+  src: url(../.././assets/Font/AvenirNextLTPro-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Avenir;
+  src: url(../.././assets/Font/AvenirNextLTPro-Demi.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Avenir;
+  src: url(../.././assets/Font/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
+}
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+* {
+  font-family: Avenir;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: #323232;
+  width: 100%;
+  position: fixed;
+}
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+  }
+}
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .header__wrapper {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .header__wrapper {
+    flex-direction: row;
+    width: 80rem;
+    margin-inline: auto;
+  }
+}
+.header__logo {
+  display: flex;
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .header__logo {
+    margin: 1rem 2rem;
+  }
+}
+.header__logo-img {
+  margin: 0;
+}
+.header__nav {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .header__nav {
+    width: auto;
+    margin: 0 1.5rem;
+    height: 71px;
+  }
+}
+.header__nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  justify-content: space-around;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .header__nav-list {
+    height: 4.4375rem;
+  }
+}
+.header__nav-item {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .header__nav-item {
+    margin: 1.25rem 1rem 0rem 1rem;
+  }
+}
+.header__nav-link {
+  height: 2.4375rem;
+  width: 8.125rem;
+  text-decoration: none;
+  color: #e1e1e1;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  font-weight: 400;
+}
+.header__nav-link:hover {
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .header__nav-link {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+.header__nav-item--active {
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+  font-weight: 700;
+}
+.header__nav-item--inactive {
+  font-weight: 400;
+}
+.header__nav-item--inactive:hover {
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+  font-weight: 700;
+}/*# sourceMappingURL=global.css.map */

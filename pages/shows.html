@@ -22,18 +22,12 @@
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item header__nav-item--active">
-            <a
-              href="index.html"
-              class="header__nav-link header__nav-link--active"
-              >Biography</a
-            >
+            <a href="../index.html"
+              class="header__nav-link header__nav-link--active"> Biography </a>
           </li>
           <li class="header__nav-item header__nav-item--inactive">
-            <a
-              href=""
-              class="header__nav-link header__nav-link--inactive"
-              >Shows</a
-            >
+            <a href="./shows.html"
+              class="header__nav-link header__nav-link--inactive">Shows </a>
           </li>
         </ul>
       </nav>
@@ -43,17 +37,50 @@
     </div>
         </nav>
   </header>
-
-  <section class="hero-banner">
+  <div class="blank-space"></div>
+   <!-- Hero Banner -->
+   <section class="hero-banner hero-banner--shows">
     <div class="hero-banner__wrapper">
-      <div class="hero-banner__background--show">
+      <div class="hero-banner__background">
         <div class="hero-banner__title-section">
-          <h1 class="hero-banner__title">The Bees Knees</h1>
+          <div class="hero-banner__title-heading">
+            <h4 class="hero-banner__subheader">Beautiful Beasts Album</h4>
+            <h1 class="hero-banner__title">
+              Queen of Yellow x For The Stings
+            </h1>
+          </div>
+          <iframe
+            class="hero-banner__soundcloud"
+            width="100%"
+            height="166"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/292549863&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+          ></iframe>
         </div>
       </div>
     </div>
   </section>
 
+
+  <main class="shows-page-body">
+    <div class="shows">
+      <div class="shows__wrapper">
+        <div class="shows__heading">
+          <h1 class="shows__header">Shows</h1>
+        </div>
+        <div>
+          <div class="tablet-show-info-heading">
+            <div class="tablet-show-info-heading__section">DATE</div>
+            <div class="tablet-show-info-heading__section">VENUE</div>
+            <div class="tablet-show-info-heading__section">LOCATION</div>
+          </div>
+          <div class="show__container"></div>
+        </div>
+      </div>
+    </div>
+  </main>
 
 
 

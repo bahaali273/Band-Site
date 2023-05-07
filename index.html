@@ -169,35 +169,72 @@
               alt="concert goers with confetti raining down on them"
             />
           </div>
-        </div>
-      </section>
-</main>
 
-      <!-- Main - Comment Section -->
-      <section class="comment">
-        <div class="comment__heading">
-          <div class="comment__header">Join the Conversation</div>
-        </div>
-        <div class="new-comment">
-          <div class="new-comment__icon-section">
-            <img class="new-comment__icon" src="./assets/Images/Mohan-muruge.jpg" alt="profile photo icon" />
-          </div>
-          <div class="new-comment__form-wrapper">
-            <form id="comment-form">
-              <label class="new-comment__subheader new-comment__subheader--name"for="newCommentName">NAME</label><br/>
-              <input class="new-comment__name-form" type="text" id="newCommentName"name="name"placeholder="Enter your name"/><br/>
-              <label class="new-comment__subheader" for="newCommentBody">COMMENT</label><br/>
-              <textarea class="new-comment__comment-form" name="comment" id="newCommentBody" cols="30" rows="10" placeholder="Add a new comment"></textarea><br/>
-              <button class="new-comment__btn-section" type="submit" id="newCommentBtn">COMMENT</button>
-            </form>
-          </div>
-        </div>
-        <div class="comments-section">
-          <div class="comments-section__container"></div>
+
+        
         </div>
       </section>
 
+      <section class="comments">
+        <h2 class="comments__title">Join The Conversation</h2>
+        <div class="comments__box">
+          <div class="comments__avatar">
+            <img
+              class="comments__image"
+              src="./assets/Images/Mohan-muruge.jpg"
+              alt="avatar"
+            />
+          </div>
 
+
+      <form id="comments__form" class="comments__form">
+        <label for="name" class="comments__label">Name</label>
+        <input
+          id="name"
+          class="comments__text comments__text--tablet"
+          type="text"
+          placeholder="Enter your name"
+          name="fullName"
+        />
+
+        <label for="comment" class="comments__label">Comment</label>
+        <textarea
+          id="comment"
+          class="comments__text"
+          placeholder="Add a new comment"
+          rows="5"
+          cols="30"
+          style="resize: none"
+          name="yourComment"
+        ></textarea>
+        <button class="comments__btn" type="submit">Comment</button>
+      </form>
+    </div>
+  </section>
+      <section class="opinions">
+        <ul id="opinions__list" class="opinions__list">
+          <!-- <li class="opinions__item">
+        <div class="opinions__box">
+          <div class="opinions__avatar">
+         <img class="opinions__image"  />
+          </div>
+          <div class="opinions__info">
+            <div class="opinions__main">
+              <p class="opinions__name">Connor Walton</p>
+              <p class="opinions__date">02/17/2021</p>
+            </div>
+            <p class="opinions__text">
+              This is art. This is inexplicable magic expressed in the purest
+              way, everything that makes up this majestic work deserves
+              reverence. Let us appreciate this for what it is and what it
+              contains.
+            </p>
+          </div>
+        </div>
+        </li>
+        </ul> -->
+      </section>
+      </main>
  <!-- Footer -->
  <footer class="footer">
   <div class="footer__wrapper">
@@ -288,5 +325,6 @@
     </div>
   </div>
 </footer>
+<script src="./scripts/index-page.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Show</title>
-    <link rel="stylesheet" href="../style/bio.css">
+    <link rel="stylesheet" href="../style/shows.css">
     <link rel="stylesheet" href="../style/global.css">
 </head>
 <body>
@@ -64,52 +64,33 @@
   </section>
 
 
-  <main class="shows-page-body">
-    <div class="shows">
-      <div class="shows__wrapper">
-        <div class="shows__heading">
-          <h1 class="shows__header">Shows</h1>
-        </div>
-        <div>
-          <div class="tablet-show-info-heading">
-            <div class="tablet-show-info-heading__section">DATE</div>
-            <div class="tablet-show-info-heading__section">VENUE</div>
-            <div class="tablet-show-info-heading__section">LOCATION</div>
+  <section class="schedule">
+    <h2 class="schedule__title">Shows</h2>
+   <div class="schedule__container"> 
+      <div class="schedule__container--tablet">
+      <p class="schedule__main--tablet">Date</p>
+      <p class="schedule__main--tablet">Venue</p>
+      <p class="schedule__main--tablet">Location</p>
+      <p class="schedule__main--tablet dummy"></p>
+      </div> 
+      <ul id="schedule__list" class="schedule__list">
+        <li class="schedule__item">
+          <div class="schedule__info">
+            <p class="schedule__main">Date</p>
+            <p class="schedule__secondary schedule__secondary--bold">
+              Mon Sept 06 2021
+            </p>
+            <p class="schedule__main">Venue</p>
+            <p class="schedule__secondary">Ronald Lane</p>
+            <p class="schedule__main">Location</p>
+            <p class="schedule__secondary">San Francisco, CA</p>
+          <button class="schedule__btn">Buy Tickets</button>
           </div>
-          <div class="show__container"></div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </li>
+     
+        </ul>
+        
+  </section>
 
   <!-- Footer -->
  <footer class="footer">
@@ -201,5 +182,6 @@
       </div>
     </div>
   </footer>
+  <script src="../scripts/build-show-page.js"></script>
 </body>
 </html>

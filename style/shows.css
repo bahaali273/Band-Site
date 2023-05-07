@@ -159,197 +159,167 @@ body {
   border-bottom: 3px solid #ffffff;
   font-weight: 700;
 } 
-.shows {
-  margin: 0 0;
+.schedule {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  .shows {
-    margin: 2.25rem 2.25rem 1rem 2.25rem;
+  .schedule {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 @media (min-width: 1024px) {
-  .shows {
-    margin: 2.25rem auto 1rem auto;
-  }
-}
-@media (min-width: 1024px) {
-  .shows__wrapper {
-    max-width: 80rem;
+  .schedule {
     display: flex;
-    justify-content: center;
-    margin-inline: auto;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    margin-top: 1.7rem;
   }
 }
-.shows__heading {
-  margin: 2.25rem 1rem 2rem 1rem;
+.schedule__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.7rem;
+  padding-top: 1rem;
+  line-height: 0.8rem;
 }
 @media (min-width: 768px) {
-  .shows__heading {
-    margin: 3rem 0rem 0rem 0rem;
+  .schedule__title {
+    font-size: 2.2rem;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
   }
 }
 @media (min-width: 1024px) {
-  .shows__heading {
-    margin-right: 16rem;
+  .schedule__title {
+    color: #323232;
+    flex: 1;
+    font-size: 2.3rem;
   }
 }
-.shows__header {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
-  font-weight: 700;
-  color: #000000;
-  margin-left: 0.5rem;
+@media (min-width: 1024px) {
+  .schedule__container {
+    flex: 3;
+    margin-top: 1.8rem;
+  }
+}
+.schedule__main {
+  color: #afafaf;
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  line-height: 1rem;
+  padding-top: 0.5rem;
 }
 @media (min-width: 768px) {
-  .shows__header {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-    font-weight: 700;
-    font-weight: 600;
+  .schedule__main {
+    display: none;
   }
 }
-
-.tablet-show-info-heading {
+.schedule__container--tablet {
   display: none;
 }
 @media (min-width: 768px) {
-  .tablet-show-info-heading {
-    margin-top: 2.25rem;
+  .schedule__container--tablet {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
   }
+}
+.schedule__main--tablet {
+  color: #afafaf;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  width: 23%;
+}
+.schedule__secondary {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  width: 160px;
 }
 @media (min-width: 768px) {
-  .tablet-show-info-heading__section {
-    font-size: 0.75rem;
-    line-height: 1.25rem;
-    font-weight: 700;
-    color: #afafaf;
-    font-weight: 600;
-    margin: 0 9rem 0 0.5rem;
+  .schedule__secondary {
+    font-size: 0.9rem;
   }
 }
-@media (min-width: 1024px) {
-  .tablet-show-info-heading__section {
-    margin: 0 12.875rem 0 0.5rem;
+.schedule__secondary--bold {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .schedule__secondary--bold {
+    font-size: 0.9rem;
+  }
+}
+.schedule__item {
+  border-bottom: 1px solid #e1e1e1;
+  list-style: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  .schedule__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+.schedule__item:hover {
+  background-color: #fafafa;
+}
+.schedule__info {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .schedule__info {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5%;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.schedule__btn {
+  background-color: #323232;
+  color: #ffffff;
+  width: 98%;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  border-style: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .schedule__btn {
+    width: 23%;
   }
 }
 
-.show__wrapper {
-  margin: 1rem 0;
-  border-bottom: 1px solid #e1e1e1;
-  z-index: 100;
-}
-@media (min-width: 768px) {
-  .show__wrapper {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    justify-content: space-between;
-  }
-}
-.show__wrapper--active {
+.selected {
   background-color: #e1e1e1;
 }
-.show__wrapper:hover {
-  background-color: #fafafa;
+.selected:hover {
+  background-color: #e1e1e1;
 }
-.show__info {
-  margin: 1rem 1rem 0 1rem;
-}
-@media (min-width: 768px) {
-  .show__info {
-    justify-self: flex-start;
-    margin: 1rem 0 0 0.625rem;
-    width: 10.875rem;
-  }
-}
-@media (min-width: 1024px) {
-  .show__info {
-    width: 14.9375rem;
-  }
-}
-.show__info-heading {
-  font-size: 0.625rem;
-  line-height: 1.25rem;
-  font-weight: 700;
-  color: #afafaf;
-  font-weight: 600;
-}
-@media (min-width: 768px) {
-  .show__info-heading {
-    display: none;
-    font-size: 0.75rem;
-    line-height: 1.25rem;
-    font-weight: 700;
-  }
-}
-.show__date {
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
-  font-weight: 400;
-  color: #323232;
-  font-weight: 600;
-}
-@media (min-width: 768px) {
-  .show__date {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    font-weight: 400;
-    font-weight: 700;
-  }
-}
-.show__venue {
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
-  font-weight: 400;
-  color: #323232;
-}
-@media (min-width: 768px) {
-  .show__venue {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    font-weight: 400;
-  }
-}
-.show__location {
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
-  font-weight: 400;
-  color: #323232;
-}
-@media (min-width: 768px) {
-  .show__location {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    font-weight: 400;
-  }
-}
-.show__btn-section {
-  background-color: #323232;
-  border-radius: 0.25rem;
-  margin: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (min-width: 768px) {
-  .show__btn-section {
-    justify-self: flex-end;
-    margin: 1rem 1rem 1rem 0;
-  }
-}
-.show__btn {
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  font-weight: 600;
-  width: inherit;
-  text-align: center;
-  margin: 0.5rem auto;
-  color: #ffffff;
-}
-@media (min-width: 768px) {
-  .show__btn {
-    padding: 0rem 1.25rem;
-  }
+
+.dummy {
+  width: 24%;
 }/*# sourceMappingURL=shows.css.map */

@@ -310,6 +310,7 @@ body {
 }
 .footer__contact-info {
   margin: 1rem 0;
+  display: block;
 }
 @media (min-width: 768px) {
   .footer__contact-info {
@@ -324,6 +325,7 @@ body {
 .footer__contact-details {
   color: #ffffff;
   margin: 0.5rem 0;
+  display: flex;
 }
 @media (min-width: 768px) {
   .footer__contact-details {
@@ -333,7 +335,9 @@ body {
 .footer__contact-details--name {
   font-weight: 600;
   margin: 0;
+  display: flex;
 }
 .footer__contact-details--link {
   text-decoration: none;
+  display: flex;
 }/*# sourceMappingURL=global.css.map */

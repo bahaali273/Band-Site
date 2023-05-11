@@ -24,8 +24,8 @@ function createComment(comment) {
 
   let opinionsImage = "";
   // if (comment.picture === undefined) {
-  opinionsImage = document.createElement("div");
-  opinionsImage.classList.add("opinions__image--indefined");
+    opinionsImage = document.createElement("div");
+    opinionsImage.classList.add("opinions__image--indefined");
   // } else {
   //   opinionsImage = document.createElement("img");
   //   opinionsImage.classList.add("opinions__image");

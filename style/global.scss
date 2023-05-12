@@ -130,7 +130,9 @@ body {
     padding: auto;
     &--shows {
       background-image: url(../assets/Images/hero-shows.jpg);
+      
     }
+
   
     &__wrapper {
       display: flex;
@@ -286,6 +288,7 @@ body {
 
   &__contact-info {
     margin: 1rem 0;
+    display: block;
     @include tablet {
       margin: 0 2.3487rem 0 0;
     }
@@ -296,8 +299,10 @@ body {
 
   &__contact-details {
     color: $white;
+    
     // @include m-footer;
     margin: 0.5rem 0;
+    display: flex;
     @include tablet {
       // @include dt-footer;
       margin: 0.5rem 0;
@@ -307,9 +312,11 @@ body {
   &__contact-details--name {
     font-weight: 600;
     margin: 0;
+    display: flex;
   }
 
   &__contact-details--link {
     text-decoration: none;
+    display: flex;
   }
 }

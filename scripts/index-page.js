@@ -111,10 +111,10 @@ function displayComments() {
 
 displayComments();
 
-const form = document.querySelector(".comments__form");
-const inputFields = document.querySelectorAll(".comments__text");
-form.addEventListener("submit", handleSubmit);
-
+// const form = document.querySelector(".comments__form");
+// const inputFields = document.querySelectorAll(".comments__text");
+// form.addEventListener("submit", handleSubmit);
+  
 function handleSubmit(event) {
   event.preventDefault();
 
